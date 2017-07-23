@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package greeter;
+
+service Greeter {
+    rpc GetCounter(Empty) returns (CounterReply) {}
+}
+
+message CounterReply {
+    int64 counter = 1;
+}
+
+message Empty {}
